@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de moi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="AP.png" type="image/x-icon">
+    <style>
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 300px;
+            height: auto;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Ajusté pour correspondre à acceuille.html */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-family: 'Arial', sans-serif;
+        }
+        p, ul {
+            font-family: 'Georgia', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin: 20px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            color: #555;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        /* Animation for nav */
+        nav.navbar {
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        nav.navbar:hover {
+            background-color: #e9ecef; /* Change background color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px; /* Position du trait sous le texte */
+            width: 0;
+            height: 2px;
+            background-color: #0056b3; /* Couleur du trait */
+            transition: width 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover::after {
+            width: 100%; /* Le trait s'étend sur toute la largeur du lien */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="en-tete">À propos de moi</h1>
+    </header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="acceuille.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projet.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="A propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div>
+            <p>
+                Je m'appelle <strong>Belo Jean Marck</strong>, un développeur web passionné, né au Congo-Brazzaville en 1950. Depuis mon plus jeune âge, j'ai été fasciné par la technologie et l'innovation numérique. Curieux et autodidacte, j'ai rapidement découvert l'informatique et le développement, trouvant dans le code un véritable langage d'expression.
+            </p>
+            <p>
+                Après avoir obtenu mon baccalauréat, j'ai poursuivi mes études supérieures à l'<strong>École Supérieure de Gestion et d’Administration des Entreprises (ESGAE)</strong>, où je me suis spécialisé dans les technologies du web et les systèmes informatiques. Cette formation m'a permis d'acquérir des compétences solides et variées.
+            </p>
+            <p>
+                Voici un aperçu des compétences que j'ai développées au fil de mes projets et de ma formation :
+            </p>
+            <ul>
+                <li><strong>HTML, CSS & JavaScript :</strong> Pour créer des interfaces web modernes, dynamiques et interactives.</li>
+                <li><strong>Bootstrap & Responsive Design :</strong> Pour concevoir des sites accessibles et adaptatifs, quel que soit le support (mobile, tablette, ordinateur).</li>
+                <li><strong>Python :</strong> Pour ses applications dans le développement, l'automatisation et les bases de l'intelligence artificielle.</li>
+                <li><strong>PHP :</strong> Pour construire des sites web dynamiques côté serveur et interagir avec des bases de données.</li>
+            </ul>
+            <p>
+                Créatif, rigoureux et toujours avide d’apprendre, je m'investis dans chaque projet avec passion et professionnalisme. Mon objectif est de contribuer à la transformation digitale de mon pays et d’inspirer d’autres jeunes à se lancer dans le domaine de la technologie.
+            </p>
+        </div>
+        <div>
+            <img src="pp.jpg" alt="Photo de Belo Jean Marck">
+        </div>
+    </div>
+    <footer class="text-center mt-4 py-2 bg-light">
+        <p>&copy; 2025 GP4 - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

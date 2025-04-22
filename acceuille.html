@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="A.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Georgia', serif; /* Police utilisée dans A propos.html */
+            font-size: 1.2rem; /* Taille de police globale augmentée */
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer {
+            margin-top: auto;
+            background-color: #f8f9fa;
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 1rem; /* Taille de police du footer */
+        }
+        main {
+            font-size: 1.2rem; /* Taille de police du contenu principal */
+            line-height: 1.8;
+            color: #333;
+        }
+        h2 {
+            font-size: 2rem; /* Taille de police des titres */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        /* Animation for nav */
+        nav.navbar {
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        nav.navbar:hover {
+            background-color: #e9ecef; /* Change background color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+            font-size: 1.1rem; /* Taille de police des liens de navigation */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px; /* Position du trait sous le texte */
+            width: 0;
+            height: 2px;
+            background-color: #0056b3; /* Couleur du trait */
+            transition: width 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover::after {
+            width: 100%; /* Le trait s'étend sur toute la largeur du lien */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="en-tete">Bienvenue sur mon portfolio</h1>
+    </header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="acceuille.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projet.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="A propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <h4>
+            <p>
+                Je suis un <strong>développeur web passionné</strong>, spécialisé dans le front-end. Depuis mon plus jeune âge, je suis fasciné par le monde du numérique et les possibilités infinies qu'il offre.
+            </p>
+            <p>
+                Cette passion pour l'informatique s'est progressivement transformée en une vocation, m'amenant à me spécialiser dans la programmation. Mon objectif est de continuer à approfondir mes acquis et de relever les défis que représente le développement web moderne.
+            </p>
+        </h4>
+        <br>
+        <h2>Mes compétences</h2>
+        <br>
+        <ul>
+            <li><strong>HTML, CSS & JavaScript :</strong> Pour créer des interfaces web modernes, dynamiques et interactives.</li>
+            <li><strong>Bootstrap & Responsive Design :</strong> Pour concevoir des sites accessibles et adaptatifs, quel que soit le support (mobile, tablette, ordinateur).</li>
+            <li><strong>Python & PHP :</strong> Pour le développement côté serveur et l'automatisation de tâches complexes.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 GP4 - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
